@@ -15,6 +15,7 @@ body {
   border: 4px solid #000;
   width: 825px;
   margin: 50px auto;
+  position: relative;
 }
 
 .title,
@@ -22,6 +23,19 @@ body {
 .shipping,
 .add-btn {
   text-transform: uppercase;
+}
+
+.title::before {
+  content: "sale";
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: #ec2f2f;
+  color: #fff;
+  padding: 7px 15px;
+  top: -17px;
+  left: -38px;
 }
 
 .title {
@@ -68,6 +82,45 @@ body {
 .info-link:hover,
 .info-link:active {
   text-decoration: none;
+}
+
+.color-boxes-container {
+  margin-bottom: 30px;
+}
+
+.color-boxes-container div {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.color-boxes-container div:last-child {
+  margin-right: 0;
+}
+
+.color-1 {
+  background-color: #000;
+}
+
+.color-2 {
+  background-color: #2f6ee2;
+}
+
+.color-3 {
+  background-color: #ec2f2f;
+}
+
+.color-4 {
+  background-color: #f0bf1e;
+}
+
+.color-5 {
+  background-color: #90cc20;
+}
+
+.color-6 {
+  background-color: #885214;
 }
 
 .details-title {
