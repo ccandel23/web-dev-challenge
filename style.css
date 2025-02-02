@@ -45,12 +45,28 @@ body {
   padding: 15px 0;
 }
 
+.product-description-container {
+  display: flex;
+  gap: 40px;
+}
+
 .shoe-img {
   width: 250px;
 }
 
+.middle-container,
+.last-container {
+  /* same as flex-grow: 1; flex-shrink: 1; flex-basis: 0;*/
+  /* flex items occupy the same available space */
+  flex: 1;
+  margin-top: 20px;
+}
+
 .price-shipping-container {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .price {
@@ -85,14 +101,13 @@ body {
 }
 
 .color-boxes-container {
-  margin-bottom: 30px;
+  display: flex;
+  gap: 14px;
 }
 
 .color-boxes-container div {
-  display: inline-block;
   width: 22px;
   height: 22px;
-  margin-right: 10px;
 }
 
 .color-boxes-container div:last-child {
@@ -146,7 +161,6 @@ body {
   color: #fff;
   border: none;
   cursor: pointer;
-  margin-top: 10px;
   width: 100%;
   padding: 15px 0;
 }
