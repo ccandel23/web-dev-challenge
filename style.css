@@ -45,23 +45,53 @@ body {
   padding: 15px 0;
 }
 
+.shoe-img,
+.middle-container {
+  margin-right: 40px;
+}
+
 .shoe-img {
   width: 250px;
+  float: left;
+}
+
+.middle-container,
+.last-container {
+  width: 243px;
+  margin-top: 20px;
+}
+
+.middle-container {
+  float: left;
+}
+
+.last-container {
+  float: right;
 }
 
 .price-shipping-container {
   margin-bottom: 20px;
 }
 
+/* to clear the floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 .price {
   font-weight: bold;
   font-size: 24px;
+  float: left;
 }
 
 .shipping {
   font-size: 12px;
   font-weight: bold;
   color: #777;
+  float: right;
+  margin-top: 8px;
 }
 
 .shoe-paragraph,
@@ -82,10 +112,6 @@ body {
 .info-link:hover,
 .info-link:active {
   text-decoration: none;
-}
-
-.color-boxes-container {
-  margin-bottom: 30px;
 }
 
 .color-boxes-container div {
@@ -146,7 +172,6 @@ body {
   color: #fff;
   border: none;
   cursor: pointer;
-  margin-top: 10px;
   width: 100%;
   padding: 15px 0;
 }
