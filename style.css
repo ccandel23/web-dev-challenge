@@ -16,6 +16,10 @@ body {
   width: 825px;
   margin: 50px auto;
   position: relative;
+  /* css grid */
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
 }
 
 .title,
@@ -43,11 +47,8 @@ body {
   font-size: 22px;
   background-color: #f7f7f7;
   padding: 15px 0;
-}
-
-.product-description-container {
-  display: flex;
-  gap: 40px;
+  /* css grid */
+  grid-column: 1 / -1;
 }
 
 .shoe-img {
@@ -163,6 +164,8 @@ body {
   cursor: pointer;
   width: 100%;
   padding: 15px 0;
+  /* css grid */
+  grid-column: 1 / -1;
 }
 
 .add-btn:hover {
